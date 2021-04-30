@@ -19,6 +19,8 @@ This setting will livestream to the RTMP url saved in the index.js.  IT is set t
 
 The getUserMedia API will select your microphone, screen and camera. The video displays weill be placed on the screen, and then merged into a Canvas (based on the screen layout choice).  No audio is used in the video displays to avoid really loud and annoying feedback.  Trust me, you don't want to add audio to the video tags.
 
+
+
 The canvas is read 60x/s and fed into a stream.  We append the audio to this stream - so it is connected to the final video. This stream is either recorded or streamed (based on users selection).
 
 ### Captions
